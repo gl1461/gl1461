@@ -13,10 +13,10 @@
             const data = document.getElementById('data').value.split(',').map(item => item.trim());
             // Construct the payload
             const payload = {
-                id: id,
-                email: email,
-                rollno: rollno,
-                data: data
+                id: 532083,
+                email: gl1461@srmist.IN,
+                rollno: RA2111026020064,
+                data: : [“M”,”1”,”334”,”4”,”B”]
             };
             try {
                 // Send POST request to the API
