@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST API Client</title>
+    <script>
+        async function submitData() {
+            // Get form values
+            const id = document.getElementById('id').value;
+            const email = document.getElementById('email').value;
+            const rollno = document.getElementById('rollno').value;
+            const data = document.getElementById('data').value.split(',').map(item => item.trim());
+            // Construct the payload
+            const payload = {
+                id: id,
+                email: email,
+                rollno: rollno,
+                data: data
+            };
+            try {
+                // Send POST request to the API
+                const response = await fetch('http://localhost:8080/myapi/v1', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                });
+                // Parse JSON response
+                const result = await response.json();
+                // Display the response
+                document.getElementById('response').innerText = JSON.stringify(result, null, 2);
+            } catch (error) {
+                document.getElementById('response').innerText = 'Error: ' + error.message;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>REST API Client</h1>
+    <form onsubmit="event.preventDefault(); submitData();">
+        <label for="id">ID:</label>
+        <input type="text" id="id" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+        <label for="rollno">Roll Number:</label>
+        <input type="text" id="rollno" required><br><br>
+        <label for="data">Data (comma-separated):</label>
+        <input type="text" id="data" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Response:</h2>
+
+    <pre id="response"></pre>
+
+</body>
+
+</html>
