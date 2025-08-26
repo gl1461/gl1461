@@ -20,7 +20,7 @@ Python | SQL | Machine Learning | Deep Learning | Artificial Neural Networks | C
 - Created interactive **visualizations of price trends and ratios**  
 - Enabled **real-time streaming analytics** for continuous market monitoring  
 
-### [Automated Ungual Pathological Classification](https://github.com/gl1461/EFFICIENT-DEEP-CNN-BASED-FIRE-DETECTION-AND-LOCALIZATION-IN-VIDEO-SURVEILLANCE-CAMERA.git)  
+### [Automated Ungual Pathological Classification](https://github.com/gl1461/AI-powered-system-for-early-detection-of-nail-diseases-using-CNNs-and-image-processing.git)  
 **Team Size:** 3 | **Skills:** Python, TensorFlow/Keras, CNNs (MobileNetV2), OpenCV, Streamlit  
 - Developed a **deep learning system** for early detection of nail diseases  
 - Deployed via **Streamlit web app** for real-time classification and longitudinal tracking  
