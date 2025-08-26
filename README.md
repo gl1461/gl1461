@@ -14,7 +14,7 @@ Python | SQL | Machine Learning | Deep Learning | Artificial Neural Networks | C
 
 ## 📂 Projects
 
-### [Real-Time Cryptocurrency Data Visualization using Deephaven]((https://github.com/gl1461/Real-Time-Cryptocurrency-Data-Visualization-using-Deephaven-Framework.git))  
+### [Real-Time Cryptocurrency Data Visualization using Deephaven](https://github.com/gl1461/Real-Time-Cryptocurrency-Data-Visualization-using-Deephaven-Framework.git) 
 **Team Size:** 1 | **Skills:** Python, Deephaven, Real-Time Data, Visualization, Streaming Analytics, WSL (Kali Linux)  
 - Built a live cryptocurrency analytics pipeline for **BTC-ETH trade filtering** and **time-series aggregation**  
 - Created interactive **visualizations of price trends and ratios**  
